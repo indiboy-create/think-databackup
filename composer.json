@@ -1,0 +1,42 @@
+{
+    "name": "youvision/think-databackup",
+    "description": "ThinkPHP 8 数据库备份与恢复扩展，支持分卷、压缩、命令行与分步恢复",
+    "type": "library",
+    "keywords": [
+        "thinkphp",
+        "thinkphp8",
+        "database",
+        "backup",
+        "restore",
+        "databackup"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "youvision"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-pdo": "*",
+        "ext-zlib": "*",
+        "topthink/framework": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "youvision\\think\\databackup\\": "src/"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "youvision\\think\\databackup\\service\\Databackup"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
